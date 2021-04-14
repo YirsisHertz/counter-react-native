@@ -1,0 +1,24 @@
+import React from 'react';
+import {View, Text} from 'react-native';
+
+const HolaMundoScreen = () => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#333',
+        justifyContent: 'center',
+      }}>
+      <Text
+        style={{
+          color: 'snow',
+          fontSize: 40,
+          textAlign: 'center',
+        }}>
+        Hola Mundo!!
+      </Text>
+    </View>
+  );
+};
+
+export default HolaMundoScreen;
