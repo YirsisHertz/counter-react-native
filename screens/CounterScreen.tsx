@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Text, View} from 'react-native';
+
+import SplashScreen from 'react-native-splash-screen';
 
 import FAB from '../components/FAB';
 import {useCounter} from '../hooks/useCounter';
@@ -8,6 +10,10 @@ import style from '../styles/styles';
 
 const CounterScreen = () => {
   const {counter, handleClick} = useCounter();
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   return (
     <View style={style.container}>
